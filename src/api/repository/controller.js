@@ -8,7 +8,8 @@ export const create = ({ bodymen: { body } }, res, next) =>
     .catch(next)
 
 export const index = ({ querymen: { query, select, cursor } }, res, next) => {
-  Repository.find(query, select, cursor)
+  const user = query.keywords.toString().replace('/i','').replace('/', '').replace(/ /g, '', '')
+  Repository.find({userLogin: user}, select, cursor)
     .then((repositories) => repositories.map((repository) => repository.view()))
     .then(success(res))
     .catch(next)

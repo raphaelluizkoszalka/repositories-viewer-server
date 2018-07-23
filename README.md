@@ -1,7 +1,7 @@
 # Node Js RESTFull microservice
 https://immobilien-test.raphael.website/
 
-### how to
+### how to clone and install dependencies
 
 - install mongodb
 - install nodejs
@@ -9,20 +9,12 @@ https://immobilien-test.raphael.website/
 - git clone https://github.com/raphaelkoszalka/repositories-viewer-server.git
 - cd repositories-viewer-server
 - npm install
+- configure project .env
 
-### dev
+### how to run
 - start mongodb
 - cd repositories-viewer-server
 - npm start
-
-### prod
-
-- start mongodb
-- npm run prod
-
-### features
-- social login API - Github
-- listing query strings - q, page, limit, fields etc. already provided by querymen
 
 ### further help
 rmkoszalka@gmail.com
